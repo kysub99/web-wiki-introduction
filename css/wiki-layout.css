@@ -152,3 +152,80 @@ footer p {
   --divider-color: #efefef;
   --font-default-color: #333;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+/*.gallery img {
+  width: 70%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 5px;
+}*/
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-author {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.comment-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#comment {
+  flex-grow: 1;  /* 가로 길이를 자동 확장 */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#submit, button[type="reset"] {
+  padding: 10px 15px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+}
+
+#submit:hover {
+  background-color: #45a049;
+}
